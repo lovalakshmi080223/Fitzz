@@ -1,0 +1,175 @@
+
+.vidwrapper{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border: 1px solid rgb(250, 242, 241);
+}
+.videoContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding-top: 56.25%; 
+    border: 1px solid rgb(229, 254, 254);
+    position: relative;
+    background-color: black;
+}
+.videoContainer video {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.videoBg{
+    mask-image: linear-gradient(to bottom, #7c7676 50%, transparent 100%);
+}
+.fitzzHeading{
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to bottom,rgb(40, 152, 9),rgb(61, 5, 202),red,white);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.4);
+}
+.content{
+    position: relative;
+    bottom: 30rem;
+    z-index: 1;
+}
+.fitzzpara{
+    text-align: center;
+    font-size: 2rem;
+    /* text-shadow: 2px 2px 5px rgba(198, 179, 179, 0.7); */
+    font-weight: 800;
+   color: rgb(234, 219, 219);
+}
+.container {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #f8f9fa;
+   
+    
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to bottom,rgb(40, 152, 9),rgb(54, 8, 124),red,white);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.4);
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .instructions {
+    /* list-style: none; */
+    padding: 5px;
+  }
+  
+  .instructions li {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+    margin: 5px 0;
+  }
+  @media (max-width: 1098px) {
+    .content {
+      bottom: 25rem;
+      max-width: 90%;
+      padding: 5px;
+    }
+  
+    .fitzzHeading {
+      font-size: 2.5rem;
+    }
+  
+    .fitzzpara {
+      font-size: 1.5rem;
+      color: rgb(1, 16, 2);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      bottom: 15rem;
+      max-width: 95%;
+    }
+  
+    .fitzzHeading {
+      font-size: 2.5rem;
+      
+    }
+  
+    .fitzzpara {
+      font-size: 1.5rem;
+      color: whitesmoke;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+        bottom: 10rem;
+    }
+  
+    .fitzzHeading {
+      font-size: 1.5rem;
+    }
+  
+    .fitzzpara {
+      font-size: 0.9rem;
+     
+    }
+  }
+  @media (max-width: 300px) {
+    .fitzzHeading {
+      font-size: 1.2rem;
+      word-break: break-word;
+    }
+  
+    .fitzzpara {
+      font-size: 0.7rem;
+      color: whitesmoke;
+    }
+  }
+  

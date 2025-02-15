@@ -1,0 +1,227 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/bg7.avif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: inset 0  0 2000px rgba(2, 76, 94, 0.7);
+} 
+.LoginPage_Heading{
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 3rem;
+    background: linear-gradient(to right,rgb(241, 233, 233),rgb(93, 39, 228),#ef4242,rgb(13, 216, 216));
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(109, 55, 163, 0.4);
+}
+.subHeading{
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(205, 22, 89, 0.7);
+}
+.subContainer{
+    display: flex;
+    position: relative;
+    top: 4%;
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(226, 154, 169, 0.7);
+    padding: 2%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.animationContainer {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    position: relative;
+    top: 5%;
+  }
+  
+  .background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('/images/anibg3.avif');
+    background-size: cover;
+    border-radius: 10px;
+    transition: transform 1s;
+    box-shadow: 0px 10px 10px rgb(6, 14, 8);
+  }
+  
+  .animationContainer:hover .background {
+    transform: perspective(20px) rotateX(2deg) translateY(-50px);
+  }
+  
+  .animatedItem {
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    bottom: 10%;
+    /* left: 1%; */
+    background-image: url('/images/download1.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    transition: opacity 1s;
+    opacity: 1;
+  }
+.animationContainer:hover .animatedItem {
+    background-image: url('/images/download2.png');
+    
+}
+.loginContainer{
+    width: 30rem;
+    height: 25rem;
+    border-radius: 10px;
+    position: relative;
+    top: 5%;
+   
+    border: 2px solid;
+    background-color: rgba(226, 226, 251, 0.7);
+    display: flex;
+    gap: 2%;
+    
+} 
+form{
+    
+    padding: 2.2rem;
+}
+.login{
+    
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    background: linear-gradient(to right,rgb(27, 194, 66),rgb(10, 114, 170),red,white);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(109, 55, 163, 0.4);
+}
+label{
+    float: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
+}
+input{
+    float: right;
+    height: 2rem;
+    width: 18rem;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input:hover{
+    
+    background-color: rgb(156, 156, 241);
+}
+.loginpara{
+    font-size: 1.2rem;
+    /* margin: 40px; */
+    padding: 5%;
+    position: relative;
+    right: 7%;
+}
+.Navitem {
+    text-decoration: none;
+    font-size: 1.5rem;
+    position: relative;
+    left: 10%;
+    color: whitesmoke;
+}
+.Navitem:hover{
+    /* padding: 5px 10px; */
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, #2e3192, #1bffff);
+}
+
+/* meadia Quaries */
+
+@media (max-width: 1040px) {
+    
+    .subContainer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .animationContainer {
+        width: 20rem;
+        height: 22rem;
+        top: 0;
+    }
+    .animatedItem{
+        position: absolute;
+        
+    }
+    
+
+    .loginContainer {
+        align-items: center;
+        margin-top: 2rem;
+        
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .loginpara {
+        text-align: center;
+    }
+
+    .Navitem {
+        left: 0;
+    }
+}
+@media (max-width: 484px) {
+    .LoginPage_Heading{
+        font-size: 2rem;
+    }
+    .subHeading{
+        font-size: 1.3rem;
+    }
+    .loginContainer {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        left: 0; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-size: 1rem; 
+       
+    }
+
+    input {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .loginpara {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
