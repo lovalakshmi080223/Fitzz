@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import Style from "../Styles/Home.module.css"
 import Button from '@mui/material/Button';
 import {useNavigate} from 'react-router-dom'
@@ -14,7 +14,23 @@ import {useNavigate} from 'react-router-dom'
     const [inch, setInch] = useState(5)
     const [bmi, setBMI] = useState(17.98)
     const [bmiResult, setBMIResult] = useState('Normal')
+    const [bmiImage, setBmiImage] = useState('/images/bmi1.png')
     const navigate = useNavigate()
+
+
+    useEffect(() => {
+        
+        if (bmiResult === "Under Weight") {
+            setBmiImage("/images/bmi2.png");
+          } else if (bmiResult === "Over Weight") {
+            setBmiImage("/images/bg3.png");
+          } else {
+            setBmiImage("/images/bmi1.png");
+          }
+      
+    },[bmiResult])
+
+
 
     const goToNext = () => {
         navigate('/signUp')
@@ -42,6 +58,7 @@ import {useNavigate} from 'react-router-dom'
         }
         
     }
+
 
   return (
     <>
@@ -91,6 +108,7 @@ import {useNavigate} from 'react-router-dom'
                     
                     <h2 className={Style.result}>BMI : {bmi}   kg/m^2 </h2>
                     <h2 className={Style.resultText}>Result : {bmiResult}</h2>
+                    <img src={bmiImage} alt={bmiResult} className={Style.bmiImage} />
                     
                 </div>
 

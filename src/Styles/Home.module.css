@@ -73,11 +73,11 @@ h2{
 .result{
     color: white;
     position: absolute;
-    bottom: 20%;
+    bottom: 32%;
 }
 .resultText{
     position: absolute;
-    bottom: 12%;
+    bottom: 25%;
     background: linear-gradient(to right,rgb(255, 255, 168),rgb(49, 163, 202),#d4e694,rgb(16, 212, 212));
     background-clip: text;
     color: transparent;
@@ -88,6 +88,12 @@ h2{
     background-clip: text;
     color: transparent;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+.bmiImage{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 3%;
 }
 
 
@@ -105,6 +111,7 @@ h2{
     }
 
     .Bmi_heading, .fitzz_heading {
+        text-align: center;
         font-size: 1.5rem; /* Reduce font size for small screens */
     }
 
@@ -112,18 +119,27 @@ h2{
         font-size: 1.5rem;
         
     }
+    label{
+        padding-bottom: 4%;
+    }
 
     #inp {
-        width: 80%; /* Make sliders responsive */
+        width: 80%; 
+        
     }
     .result{
         position: absolute;
-        bottom: 20%;
+        top: 52%;
     }
     .resultText{
         position: absolute;
-        bottom: 15%;
+        top: 60%;
        
+    }
+    .bmiImage{
+        position: absolute;
+        top: 67%;
+        left: 10%;
     }
 }
 
@@ -158,15 +174,20 @@ h2{
         font-size: 1.2rem;
         padding: 0 10px;
     }
+    
     .result{
         position: absolute;
-        bottom: 59%;
+        top: 26%;
         font-size: 1.5rem;
     }
     .resultText{
         position: absolute;
-        bottom: 56%;
+        top: 30%;
         font-size: 1.4;
        
+    }
+    .bmiImage{
+        position: absolute;
+        top: 35%;
     }
 }

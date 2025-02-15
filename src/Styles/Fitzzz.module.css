@@ -44,8 +44,6 @@
     font-size: 2rem;
     text-shadow: 2px 2px 5px rgba(198, 179, 179, 0.7);
     font-weight: 800;
-   /* color: rgb(239, 49, 227); */
-  
    background: linear-gradient(to right,green,rgb(168, 24, 48),red,black,red,black);
     background-clip: text;
     color: transparent;
@@ -129,7 +127,8 @@
   
     .fitzzpara {
       font-size: 1.5rem;
-      color: antiquewhite;
+      /* color: antiquewhite; */
+      color: black;
     }
   }
   
@@ -145,6 +144,7 @@
   
     .fitzzpara {
       font-size: 1.5rem;
+      color: aqua;
       
     }
     .videoBg{
