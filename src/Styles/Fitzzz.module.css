@@ -42,16 +42,19 @@
 .fitzzpara{
     text-align: center;
     font-size: 2rem;
-    /* text-shadow: 2px 2px 5px rgba(198, 179, 179, 0.7); */
+    text-shadow: 2px 2px 5px rgba(198, 179, 179, 0.7);
     font-weight: 800;
-   color: rgb(234, 219, 219);
+   /* color: rgb(239, 49, 227); */
+  
+   background: linear-gradient(to right,green,rgb(168, 24, 48),red,black,red,black);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 8px rgba(99, 133, 23, 0.4);
 }
 .container {
     text-align: center;
     padding: 2.5rem;
     background-color: #f8f9fa;
-   
-    
   }
   
   .heading {
@@ -126,7 +129,7 @@
   
     .fitzzpara {
       font-size: 1.5rem;
-      color: rgb(1, 16, 2);
+      color: antiquewhite;
     }
   }
   
@@ -138,13 +141,15 @@
   
     .fitzzHeading {
       font-size: 2.5rem;
-      
     }
   
     .fitzzpara {
       font-size: 1.5rem;
-      color: whitesmoke;
+      
     }
+    .videoBg{
+      mask-image: none;
+  }
   }
   
   @media (max-width: 480px) {
@@ -169,7 +174,7 @@
   
     .fitzzpara {
       font-size: 0.7rem;
-      color: whitesmoke;
+      color: aqua;
     }
   }
   
