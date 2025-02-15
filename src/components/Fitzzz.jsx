@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import styles from '../Styles/fitzzz.module.css'; 
+import styles from '../Styles/Fitzzz.module.css'; 
 
 const Fitzzz = () => {
 
