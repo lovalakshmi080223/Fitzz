@@ -7,13 +7,13 @@ import {getAuth} from 'firebase/auth';
 
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_RAPIDAPI_KEY,
-  authDomain: "fitzz-390c1.firebaseapp.com",
-  projectId: "fitzz-390c1",
-  storageBucket: "fitzz-390c1.firebasestorage.app",
-  messagingSenderId: "998214075392",
-  appId: "1:998214075392:web:fc52743b59ed407885c4e5",
-  measurementId: "G-5CBY1LCKTD"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

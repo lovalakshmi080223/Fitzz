@@ -1,7 +1,6 @@
 .container {
     width: 100vw;
     height: 100vh;
-    /* background-color: brown; */
     background-image: url('/images/bg4.webp');
     background-size: contain;
     background-position: center;
@@ -97,7 +96,7 @@ h2{
 }
 
 
-/* 🔹 Small Screens (Mobiles) */
+
 @media (max-width: 768px) {
     .homepara{
         display: flex;
@@ -112,7 +111,7 @@ h2{
 
     .Bmi_heading, .fitzz_heading {
         text-align: center;
-        font-size: 1.5rem; /* Reduce font size for small screens */
+        font-size: 1.5rem;
     }
 
     h2 {
@@ -143,7 +142,7 @@ h2{
     }
 }
 
-/* 🔹 Extra Small Screens (Below 480px) */
+
 @media (max-width: 564px) {
     .homeHeading{
         
@@ -159,7 +158,8 @@ h2{
     }
     .Bmi, .fitzz {
         width: 100%;
-        padding: 1rem;
+        
+        
     }
 
     .Bmi_heading, .fitzz_heading {
@@ -177,13 +177,13 @@ h2{
     
     .result{
         position: absolute;
-        top: 26%;
+        top: 28%;
         font-size: 1.5rem;
     }
     .resultText{
         position: absolute;
-        top: 30%;
-        font-size: 1.4;
+        top: 31%;
+        font-size: 1.4 rem;
        
     }
     .bmiImage{

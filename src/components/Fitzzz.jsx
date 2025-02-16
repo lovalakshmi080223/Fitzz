@@ -5,7 +5,7 @@ const Fitzzz = () => {
 
 
   const [exercises, setExercises] = useState([])
-  const key = import.meta.env.VITE_API_KEY;
+  const key = import.meta.env.VITE_RAPIDAPI_KEY;
 
 
     const fetchData = async() => {
